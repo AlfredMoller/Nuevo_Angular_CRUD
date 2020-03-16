@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~ngx-toastr/toastr";
+
+@import "~ngx-toastr/toastr-bs4-alert";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~ngx-toastr/toastr-bs4-alert";
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+/*
+La clase ng-dirty le dice que el formulario ha sido 
+modificado por el usuario, mientras que la clase ng-pristine
+ le dice que el formulario no ha sido modificado por el usuario. Así que ng-dirty 
+ y ng-pristine son dos lados de la misma historia.*/
+input.ng-touched.ng-invalid {
+  border-color: red;
+}
+
+div.validation-error {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: red;
+}
+
+#toast-container > div {
+  opacity: 1;
+}
